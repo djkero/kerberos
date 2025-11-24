@@ -38,8 +38,7 @@ modules:
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
-  - type: dnf
-    install:
+  - type: rpm-ostree
       packages:
         - SDL3-devel
         - SDL3_image-devel
