@@ -40,9 +40,10 @@ modules:
 
   - type: dnf
     install:
-      - SDL3-devel
-      - SDL3_image-devel
-      - SDL3_ttf-devel
+      packages:
+        - SDL3-devel
+        - SDL3_image-devel
+        - SDL3_ttf-devel
 
   - type: default-flatpaks
     configurations:
