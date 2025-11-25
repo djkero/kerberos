@@ -41,7 +41,7 @@ modules:
   - type: dnf
     repos:
       cleanup: true # clean up added repos after module is done
-      nonfree: rpmfusion
+      nonfree: negativo17
     install:
       packages:
         - SDL3-devel
