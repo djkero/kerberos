@@ -38,6 +38,7 @@ modules:
         - SDL3_image-devel
         - SDL3_ttf-devel
         - starship
+        - steam
         - wine
         - zsh
         - zsh-autosuggestions
