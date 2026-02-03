@@ -21,6 +21,7 @@ modules:
     repos:
         copr:
             - atim/starship
+            - ublue-os/packages
         nonfree: negativo17
     install:
       packages:
@@ -30,6 +31,7 @@ modules:
         - lldb
         - llvm
         - llvm-devel
+        - lutris
         - oh-my-posh
         - postgresql-contrib
         - postgresql-server
@@ -39,6 +41,7 @@ modules:
         - SDL3_ttf-devel
         - starship
         - steam
+        - uupd
         - wine
         - zsh
         - zsh-autosuggestions
