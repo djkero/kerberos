@@ -18,9 +18,10 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: akmods
-    base: bazzite # if not specified, classic "main" base is used by default
+    base: main # if not specified, classic "main" base is used by default
     install:
         - v4l2loopback
+        - xone
 
   - type: dnf
     install:
