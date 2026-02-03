@@ -35,12 +35,14 @@ modules:
         - oh-my-posh
         - postgresql-contrib
         - postgresql-server
+        - powerline-fonts
         - ptyxis
         - SDL3-devel
         - SDL3_image-devel
         - SDL3_ttf-devel
         - starship
         - steam
+        - ublue-*
         - uupd
         - wine
         - zsh
