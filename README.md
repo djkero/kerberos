@@ -1,4 +1,4 @@
-Custom Fedora Atomic Image for Desktops and Laptops. Note: I do not have images for Nvidia or other variants of Bazzite.
+Custom Fedora Atomic Image for Desktops and Laptops. Note: I do not have images for Nvidia or other variants.
 
 ## Installation
 
