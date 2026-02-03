@@ -6,7 +6,7 @@ name: kerberos
 description: Custom Fedora Atomic Image, based off of Bazzite for my Desktop.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bazzite
+base-image: ghcr.io/blue-build/base-images/fedora-kinoite
 image-version: stable # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -16,6 +16,11 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+
+  - type: akmods
+    base: bazzite # if not specified, classic "main" base is used by default
+    install:
+        - v4l2loopback
 
   - type: dnf
     install:
@@ -29,6 +34,9 @@ modules:
         - oh-my-posh
         - postgresql-contrib
         - postgresql-server
+        - SDL3-devel
+        - SDL3_image-devel
+        - SDL3_ttf-devel
         - wine
         - zsh
         - zsh-autosuggestions
@@ -44,12 +52,6 @@ modules:
 #      - SDL3-devel
 #      - SDL3_image-devel
 #      - SDL3_ttf-devel
-
-  - type: rpm-ostree
-    install:
-      - SDL3-devel
-      - SDL3_image-devel
-      - SDL3_ttf-devel
 
   - type: default-flatpaks
     configurations:
